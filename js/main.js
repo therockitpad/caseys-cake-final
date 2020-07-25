@@ -309,6 +309,9 @@ AOS.init({
       }
     }
   });
+
+  
+
   //------- Google Map  js --------//  
 
     if (document.getElementById("map")) {
@@ -450,3 +453,7 @@ AOS.init({
 
 
 })(jQuery);
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})

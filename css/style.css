@@ -1865,14 +1865,14 @@ a.btn-social,
     margin: 6px 2px;
     width: 36px;
 }
-.btn-social.btn-lg
+/* .btn-social.btn-lg
 {
     font-size: 22px;
     height: 72px;
     line-height: 40px;
     margin: 10px 6px;
     width: 72px;
-}
+} */
 
 .btn-facebook
 {
@@ -1882,3 +1882,11 @@ a.btn-social,
 {
     background-color: #4c70ba;
 }
+
+/* @media (max-width: 591.98px) {
+  .heading-mb-5{
+    width: 30%;
+  }
+} */
+
+
