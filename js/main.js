@@ -287,16 +287,18 @@ AOS.init({
 
   var owl = $("#owl-demo");
  
-  owl.owlCarousel({
+  $('#owl-demo').owlCarousel( {
     loop: true,
     center: true,
-    autoPlay: true,
-    nav: true,
-    margin: 20,
     items: 3,
+    margin: 30,
+    autoplay: true,
+    dots:true,
+    nav:true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
-    navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],  
+    navText: ['<i class="fa fa-caret-left"></i>',
+              '<i class="fa fa-caret-right"></i>'],
     responsive: {
       0: {
         items: 1
