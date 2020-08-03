@@ -10,6 +10,8 @@
 }
 
 // Container that the modal scrolls within
+// position should be absolute instead of fixed. Fixed does not allow repositioning the window. Absolute will set a default position for the window to go to
+// once the modal is opened
 .modal {
   position: fixed;
   top: 0;
@@ -58,7 +60,7 @@
 
 // Actual modal
 .modal-content {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%; // Ensure `.modal-content` extends the full width of the parent `.modal-dialog`
