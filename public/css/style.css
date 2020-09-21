@@ -9,7 +9,10 @@
 .owl-prev {
     display: none;
 }
-
+#home-page-heading {
+    max-width: 500px;
+    width: 100%;
+}
 /* End */
 
 html {
@@ -1255,7 +1258,7 @@ textarea.form-control {
 }
 
 .section {
-    padding: 7em 0;
+    padding: 2em 0;
     z-index: 2;
     position: relative;
 }
