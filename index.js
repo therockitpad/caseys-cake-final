@@ -1,11 +1,15 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
+const prepareEmailFields = require('./prepareEmailFields');
+
 require('dotenv').config();
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(bodyParser.urlencoded());
 app.use(express.static('public'));
 
 const transporter = nodeMailer.createTransport({
@@ -16,18 +20,22 @@ const transporter = nodeMailer.createTransport({
     }
 });
 
-app.post('/email', (req, res) => {
+app.post('/', (req, res) => {
+    console.log(req.body, prepareEmailFields);
     try {
-        const { from, to, subject, text } = req.body;
+        const { from, to, subject, text } = prepareEmailFields(req.body);
         if (!(from && to && subject && text)) {
             throw new Error('error');
         }
         const mailOptions = { from, to, subject, text };
-        transporter.sendMail(mailOptions, (err, info) => {
-            console.log({ err, info });
-        });
+        console.log(mailOptions);
+        // transporter.sendMail(mailOptions, (err, info) => {
+        //     console.log({ err, info });
+        // });
+        res.send(JSON.stringify(mailOptions));
     } catch (err) {
-        res.status(400).send();
+        console.log(err);
+        res.send(JSON.stringify({ err }));
     }
 });
 
