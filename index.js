@@ -8,11 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static('public'));
 
-// Create a file named .env. And put
-// EMAIL=emailid-of-account-to-use
-// PASS=password-of-account-to-use
-// Go to this link https://www.google.com/settings/security/lesssecureapps
-// And flip the switch on
 const transporter = nodeMailer.createTransport({
     service : 'gmail',
     auth    : {
