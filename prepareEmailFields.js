@@ -1,20 +1,22 @@
 module.exports = function prepareEmailFields(body) {
-    const { name, email, phone, occasions, date, time, message } = body;
-    if (!(name && email && phone && occasions && date))
+    const { name, email, phone, persons, date, time, message } = body;
+    if (!(name && email && phone && persons && date))
         throw new Error('Empty fields');
-    const subject = `${occasions} cake on ${date}`;
+    const subject = `For ${name} on ${date}`;
     const text = `
     Name: ${name}
     Email: ${email}
     Phone number: ${phone}
     Date: ${date}
     Time: ${time}
+    Guests: ${persons}
 
     ${message}
     `;
+
     return {
-        from    : 'emailexpendable4@gmail.com',
-        to      : 'archit.bhonsle@gmail.com',
+        from    : process.env.SENDER_MAIL,
+        to      : process.env.TO_MAIL,
         subject : subject,
         text    : text
     };
