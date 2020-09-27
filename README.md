@@ -3,8 +3,8 @@
 ## How to test
 
 ```bash
-    npm install
-    node index.js
+npm install
+node index.js
 ```
 
 This is will host the website on port 3000.
