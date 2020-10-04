@@ -33,6 +33,27 @@
 #nav-logo-link {
   width: 100%;
 }
+#index-page-bg {
+  background-image: url("/images/home-cover.jpg");
+}
+#wedding-page-bg {
+  background-image: url("/images/wedding-cover.jpg");
+}
+#occasions-page-bg {
+  background-image: url("/images/occasionscover.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+  #index-page-bg {
+    background-image: url("/images/new_images/home-cover-img-4.jpg");
+  }
+  #wedding-page-bg {
+    background-image: url("/images/new_images/cover-weddings1.jpg");
+  }
+  #occasions-page-bg {
+    background-image: url("/images/new_images/cover-occasions1.jpg");
+  }
+}
 
 /* #nav-logo-img {
   height: 100px;
