@@ -25,38 +25,38 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wedding.css">
-    
+
   </head>
 
 
-<!-- section header-->   
+<!-- section header-->
 <body class="bg-light">
 
     <div data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
 
       <div class="site-wrap">
-        
+
         <nav class="site-menu" id="ftco-navbar-spy">
           <div class="site-menu-inner" id="ftco-navbar">
             <ul class="list-unstyled">
               <li><a href="index.html">Home</a></li>
-              <li><a href="ocassions.html">Occasions</a></li>
+              <li><a href="wedding.html">Weddings</a></li>
               <li><a href="#section-contact">Contact Us</a></li>
             </ul>
           </div>
         </nav>
-  
+
         <header class="site-header">
           <div class="row align-items-center">
             <div class="col-5 col-md-3">
-               
+
             </div>
             <div class="col-2 col-md-6 text-center site-logo-wrap">
               <a href="wedding.html"><img src="./images/logo.png" class="site-logo" /></a>
             </div>
             <div class="col-5 col-md-3 text-right menu-burger-wrap">
               <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
-  
+
             </div>
           </div>
         </header>
@@ -66,16 +66,16 @@
 <div class="main-wrap ">
 
     <div class="cover_1 overlay bg-light">
-      <div class="img_bg" style="background-image: url(images/wedding-cover.jpg);" data-stellar-background-ratio="0.5">
+      <div class="img_bg" id="occasions-page-bg" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-10" data-aos="fade-up">
-              <h2 class="heading mb-5">Weddings</h2>
+              <h2 class="heading mb-5"><img id="home-page-heading" src="images/text-logo-2.png"/></h2>
             </div>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
 <!-- end of section1 -->
 
 <!-- section 2-->
@@ -83,25 +83,25 @@
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-12 col-lg-8 section-heading">
-          <h2 class="heading mb-5">We Celebrate your Special Day</h2>
-          <p>Popular wedding dates are booking fast. Reserve your date now before it's too late. Call Casey's Cakes for your free one on one personal consultation and get the Wedding Cake that you desire.</p>
+          <h2 class="heading mb-5">Custom Cakes for any Ocassion</h2>
+          <p>Specially designed cakes custom made to suit your needs. We will work tirelessly to fulfill your requests to create a cake that looks and tastes fabulous!</p>
         </div>
       </div>
     </div>
     <!-- end of section2 -->
-    
+
     <!-- section3-->
     <div class="container">
         <div id="owl-demo" class="owl-carousel owl-theme">
-          <div class="item"><img src="images/wedding1.jpg" alt="wedding cake"></div>
-          <div class="item"><img src="images/wedding2.jpg" alt="wedding cake 2"></div>
-          <div class="item"><img src="images/wedding5.jpg" alt="wedding cake 3"></div>
-          <div class="item"><img src="images/wedding4.jpg" alt="wedding cake 4"></div>
-          <div class="item"><img src="images/wedding3.jpg" alt="wedding cake 5"></div>
+          <div class="item"><img src="images/ocassion1.jpg" alt="wedding cake"></div>
+          <div class="item"><img src="images/ocassion2.jpg" alt="wedding cake 2"></div>
+          <div class="item"><img src="images/ocassion3.jpg" alt="wedding cake 3"></div>
+          <div class="item"><img src="images/ocassion4.jpg" alt="wedding cake 4"></div>
+          <div class="item"><img src="images/ocassion5.jpg" alt="wedding cake 5"></div>
          </div>
         </div>
 <!-- end of section3 -->
-    
+
 <!-- section 4 -->
 
 <!-- <div class="row" style="position:relative; top:80px; left: -120px;">
@@ -109,7 +109,7 @@
     <div class="shadow hover-shadow-lg p-4 mb-5 text-center bg-white rounded" style="width: 50%;";>
       <p class="text m-5">Popular wedding dates are booking fast. Reserve your date now before it's too late.</p>
     </div>
-  </div>      
+  </div>
 </div>
 <br />
 <br />
@@ -129,87 +129,100 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-10 p-5 form-wrap">
-            <form action="#">
-              <div class="row mb-4">
-                <div class="form-group col-md-4">
-                  <label for="name" class="label">Name</label>
-                  <div class="form-field-icon-wrap">
-                    <span class="icon ion-android-person"></span>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="email" class="label">Email</label>
-                  <div class="form-field-icon-wrap">
-                    <span class="icon ion-email"></span>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="phone" class="label">Phone</label>
-                  <div class="form-field-icon-wrap">
-                    <span class="icon ion-android-call"></span>
-                    <input type="text" class="form-control" id="phone">
-                  </div>
-                </div>
+                <form id="email-form">
+                  <div class="row mb-4">
+                    <div class="form-group col-md-4">
+                      <label for="name" class="label">Name</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-android-person"></span>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="email" class="label">Email</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-email"></span>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="phone" class="label">Phone</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-android-call"></span>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                      </div>
+                    </div>
 
+                    <!-- <div class="form-group col-md-4">
+                      <label for="persons" class="label">Ocassion</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-android-arrow-dropdown"></span>
+                        <select name="occasions" id="persons" class="form-control" required>
+                          <option value="wedding">Wedding</option>
+                          <option value="birthday">Birthday</option>
+                          <option value="party">Party</option>
+                          <option value="catering">Catering</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div> -->
                 <div class="form-group col-md-4">
                   <label for="persons" class="label">Number of Guests</label>
                   <div class="form-field-icon-wrap">
                     <span class="icon ion-android-arrow-dropdown"></span>
-                    <select name="persons" id="persons" class="form-control">
-                      <option value="">1 - 10</option>
-                      <option value="">10 - 50</option>
-                      <option value="">50 - 100</option>
-                      <option value="">100+</option>
+                    <select name="persons" id="persons" class="form-control" required>
+                      <option value="1 - 10">1 - 10</option>
+                      <option value="10 - 50">10 - 50</option>
+                      <option value="50 - 100">50 - 100</option>
+                      <option value="100+">100+</option>
                     </select>
                   </div>
                 </div>
-                <div class="form-group col-md-4">
-                  <label for="date" class="label">Date</label>
-                  <div class="form-field-icon-wrap">
-                    <span class="icon ion-calendar"></span>
-                    <input type="text" class="form-control" id="date">
-                  </div>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="time" class="label">Time</label>
-                  <div class="form-field-icon-wrap">
-                    <span class="icon ion-android-time"></span>
-                    <input type="text" class="form-control" id="time">
-                  </div>
-                </div>
+                    <div class="form-group col-md-4">
+                      <label for="date" class="label">Date</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-calendar"></span>
+                        <input type="text" class="form-control" id="date" name="date" qrequired>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="time" class="label">Time</label>
+                      <div class="form-field-icon-wrap">
+                        <span class="icon ion-android-time"></span>
+                        <input type="text" class="form-control" id="time" name="time" qrequired>
+                      </div>
+                    </div>
 
-                <div class="form-group col-md-12">
-                  <label for="message" class="label">Message</label>
-                  <span class="iconify" data-icon="ic-round-cake" data-inline="false"></span>
-                 <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-               </div>
+                    <div class="form-group col-md-12">
+                      <label for="message" class="label">Message</label>
+                      <span class="iconify" data-icon="ic-round-cake" data-inline="false"></span>
+                      <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+                    </div>
 
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <input type="submit" class="btn btn-primary btn-outline-primary btn-block" value="Send Message">
-                </div>
-              </div>
-            </form>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-4">
+                      <button class="btn btn-primary btn-outline-primary btn-block" id="submit-button">Send Message</button>
+                    </div>
+                  </div>
+                </form>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     </div>
 <!-- end of section5 -->
 
 <footer class="ftco-footer">
     <div class="container">
-      
+
       <div class="row">
       <div class="col-md-4 mb-5">
         <div class="footer-widget">
           <h3 class="mb-4">About Casey's Cake</h3>
           <p>Call Casey's Cakes for your free one on one personal consultation and get the cake that you desire.</p>
-          
-          <p><a href="#section-about" class="btn btn-primary btn-outline-primary">Read More</a></p>
+
+          <!-- <p><a href="#section-about" class="btn btn-primary btn-outline-primary">Read More</a></p> -->
         </div>
       </div>
       <div class="col-md-4 mb-5">
@@ -257,7 +270,6 @@
  <!-- loader -->
     <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff7a5c"/></svg></div>
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -269,13 +281,14 @@
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
 
-    <script src="js/jquery.easing.1.3.js"></script>    
+    <script src="js/jquery.easing.1.3.js"></script>
 
     <script src="js/aos.js"></script>
-    
+
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 
+    <script src="js/email.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

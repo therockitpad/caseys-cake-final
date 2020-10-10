@@ -1,0 +1,12 @@
+.owl-nav i {
+    font-size: 52px;
+    color: #000;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    margin-left: -160px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    margin-right: -160px;
+}
